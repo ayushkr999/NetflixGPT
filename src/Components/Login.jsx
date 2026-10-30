@@ -187,24 +187,6 @@ const Login = () => {
             )}
           </button>
 
-          <button
-            type="button"
-            onClick={() => {
-              dispatch(
-                addUser({
-                  uid: "guest-user",
-                  email: "guest@netflix.com",
-                  displayName: "Guest Member",
-                })
-              );
-              navigate("/browse");
-            }}
-            className="w-full bg-zinc-800/90 hover:bg-zinc-700 active:scale-95 transition py-2.5 rounded-lg font-semibold text-sm border border-zinc-600 text-gray-200 flex items-center justify-center gap-2"
-          >
-            <span>🚀</span>
-            <span>Explore Directly as Guest</span>
-          </button>
-
           <div className="pt-2 text-sm text-gray-400 flex items-center justify-between">
             <span>
               {isSignInForm ? "New to NetflixGPT?" : "Already have an account?"}
