@@ -52,7 +52,7 @@ const MovieCard = ({ movie, posterPath }) => {
         {/* Rating badge top-right */}
         {rating && rating !== "N/A" && (
           <div className="absolute top-2 right-2 bg-black/75 backdrop-blur-sm border border-yellow-500/40 text-yellow-400 text-[11px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1 shadow">
-            <span>⭐</span>
+            <span>★</span>
             <span>{rating}</span>
           </div>
         )}
@@ -86,7 +86,7 @@ const MovieCard = ({ movie, posterPath }) => {
         <div className="flex items-center justify-between text-[11px] text-gray-400 mt-0.5">
           <span>{year || "Movie"}</span>
           {rating && rating !== "N/A" && (
-            <span className="text-yellow-400 font-bold">⭐ {rating}</span>
+            <span className="text-yellow-400 font-bold">★ {rating}</span>
           )}
         </div>
       </div>
